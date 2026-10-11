@@ -1,0 +1,155 @@
+{
+  "updated": "2026-10-11T14:08:53Z",
+  "items": [
+    {
+      "id": "gh:anthropics/claude-code:v2.1.296",
+      "title": "Claude Code v2.1.296",
+      "summary": "Subagents can now auto-compact earlier than the main conversation, workflow agents can all run on one model, and the Read tool gains allow_large for big files. Also fixes managed-settings hook bugs, Haiku 5.5 token counting and secret redaction in shared transcripts.",
+      "source": "Claude Code",
+      "category": "claude-code",
+      "date": "2026-10-09T19:28:59Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
+      "highlights": [
+        "autoCompactWindow for subagents",
+        "CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL env var",
+        "Read tool: allow_large option"
+      ]
+    },
+    {
+      "id": "gh:anthropics/anthropic-sdk-typescript:sdk-v0.133.0",
+      "title": "Anthropic SDK (TypeScript) sdk-v0.133.0",
+      "summary": "Adds types for the Chat and Cowork unified analytics metrics, plus workflows, multiagent configuration and thread-status filtering for Managed Agents.",
+      "source": "Anthropic SDK (TypeScript)",
+      "category": "tools",
+      "date": "2026-10-09T15:35:41Z",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.133.0",
+      "highlights": [
+        "Chat and Cowork analytics types",
+        "Managed Agents: workflows + multiagent config",
+        "Thread status filtering"
+      ]
+    },
+    {
+      "id": "gh:anthropics/anthropic-sdk-python:v1.13.0",
+      "title": "Anthropic SDK (Python) v1.13.0",
+      "summary": "Adds types for the Chat and Cowork unified analytics metrics, plus workflows, multiagent configuration and thread-status filtering for Managed Agents.",
+      "source": "Anthropic SDK (Python)",
+      "category": "tools",
+      "date": "2026-10-09T15:28:52Z",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.13.0",
+      "highlights": [
+        "Chat and Cowork analytics types",
+        "Managed Agents: workflows + multiagent config",
+        "Thread status filtering"
+      ]
+    },
+    {
+      "id": "docs:2026-10-09",
+      "title": "Claude Platform release notes, October 9, 2026",
+      "summary": "Claude Managed Agents can now use dynamic workflows (beta): the agent writes a program that runs many agents in phases and combines their results, running server-side as a workflow run. Turn it on through the agent's multiagent field.",
+      "source": "Claude Platform",
+      "category": "api",
+      "date": "2026-10-09T00:00:00Z",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "highlights": [
+        "Beta header managed-agents-2026-04-01",
+        "Follow runs via workflow_run.* events",
+        "Guide it from the system prompt"
+      ]
+    },
+    {
+      "id": "gh:anthropics/claude-code:v2.1.295",
+      "title": "Claude Code v2.1.295",
+      "summary": "Command and HTTP hooks can now fail closed with onFailure: \"block\", blocking the action if a hook can't start, times out or errors. Also adds OSC 7501 terminal status support, per-upstream model lists for the gateway, and a /copy picker that drops quote markers.",
+      "source": "Claude Code",
+      "category": "claude-code",
+      "date": "2026-10-08T19:48:38Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
+      "highlights": [
+        "Hooks: onFailure \"block\"",
+        "OSC 7501 working/waiting/done status",
+        "Gateway: models list per upstream"
+      ]
+    },
+    {
+      "id": "gh:anthropics/claude-code:v2.1.294",
+      "title": "Claude Code v2.1.294",
+      "summary": "Fixes prompt and agent hooks written as plain instructions (like \"Block commands that...\") that failed to block what they should, and improves how Stop and SubagentStop instruction hooks are judged so Claude is less likely to stop early.",
+      "source": "Claude Code",
+      "category": "claude-code",
+      "date": "2026-10-08T05:03:54Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+      "highlights": [
+        "Instruction hooks now block correctly",
+        "Fewer premature stops on Stop hooks"
+      ]
+    },
+    {
+      "id": "gh:anthropics/anthropic-sdk-typescript:sdk-v0.132.1",
+      "title": "Anthropic SDK (TypeScript) sdk-v0.132.1",
+      "summary": "The TypeScript client now throws before sending a request with an empty path parameter. The rest of the release is CI, publishing and repo-docs housekeeping.",
+      "source": "Anthropic SDK (TypeScript)",
+      "category": "tools",
+      "date": "2026-10-08T03:07:00Z",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.1",
+      "highlights": [
+        "Client throws on empty path parameter"
+      ]
+    },
+    {
+      "id": "docs:2026-10-08",
+      "title": "Claude Platform release notes, October 8, 2026",
+      "summary": "The Compliance API chat endpoints now also return chats from the unified Claude experience (beta, Claude Enterprise), and the API can download Claude Docs documents as Word files (beta).",
+      "source": "Claude Platform",
+      "category": "api",
+      "date": "2026-10-08T00:00:00Z",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "highlights": [
+        "Unified Claude chats in Compliance API",
+        "Claude Docs download as Word (beta)"
+      ]
+    },
+    {
+      "id": "gh:anthropics/claude-code:v2.1.293",
+      "title": "Claude Code v2.1.293",
+      "summary": "Claude Haiku 5.5 becomes the default Haiku model on the Anthropic API (1M context, $0.10/$0.50 per million tokens). Also fixes Claude redoing finished work after context compaction, an HTTP MCP connection memory leak and several subagent messaging bugs.",
+      "source": "Claude Code",
+      "category": "claude-code",
+      "date": "2026-10-07T18:10:20Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "highlights": [
+        "Haiku 5.5 is the default Haiku",
+        "Fix: redoing work after compaction",
+        "Fix: MCP connection memory leak"
+      ]
+    },
+    {
+      "id": "gh:anthropics/anthropic-sdk-python:v1.12.0",
+      "title": "Anthropic SDK (Python) v1.12.0",
+      "summary": "Adds claude-haiku-5-5 and typed computer and browser toolset tool calls, lifecycle-stage fields and a filter on /v1/models, and url_sources for the Managed Agents web_fetch tool. Also fixes empty strings being dropped in query params and multipart forms.",
+      "source": "Anthropic SDK (Python)",
+      "category": "tools",
+      "date": "2026-10-07T17:57:07Z",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
+      "highlights": [
+        "claude-haiku-5-5 model added",
+        "Typed computer + browser toolset calls",
+        "Lifecycle stage fields on /v1/models"
+      ]
+    },
+    {
+      "id": "docs:2026-10-07",
+      "title": "Claude Platform release notes, October 7, 2026",
+      "summary": "Claude Haiku 5.5 (claude-haiku-5-5) launches: 1M context, 128k output, adaptive thinking with effort. Code written for Haiku 4.5 can break: budget_tokens, sampling params and prefill now return 400s. Sonnet 5.5 cache reads drop to $0.10/MTok.",
+      "source": "Claude Platform",
+      "category": "models",
+      "date": "2026-10-07T00:00:00Z",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "highlights": [
+        "1M context, 128k max output",
+        "Breaks vs Haiku 4.5: budget_tokens, sampling, prefill",
+        "Sonnet 5.5 cache reads now $0.10/MTok"
+      ]
+    }
+  ]
+}
